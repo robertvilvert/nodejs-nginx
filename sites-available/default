@@ -1,5 +1,5 @@
 upstream application{
-                server nodejs-service;
+                server nodejs-service:3000;
         }
 
 server {
