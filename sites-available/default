@@ -23,7 +23,7 @@ server {
 
 server {
     listen              443 ssl;
-    server_name_;   
+    
     ssl_certificate     /etc/nginx/certs/testonly.cert;
     ssl_certificate_key /etc/nginx/certs/testonly.key;
     ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
@@ -38,7 +38,7 @@ server {
     proxy_pass     http://application;
     proxy_read_timeout  90;
     proxy_buffering off;
-
+    }
 
 }
 
